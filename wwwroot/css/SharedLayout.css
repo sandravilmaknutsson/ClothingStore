@@ -1,0 +1,67 @@
+ /* Design of Header and Footer */
+ :root{
+    /* General */
+    --LinkColor: black; 
+    /* Header */
+    --NavMargin: 0 5%;
+    --NavIconPadding: .5em;
+
+    /* Footer */
+    --FooterMargins: 5% auto;
+    --SocialLinksWidth: 50%;
+    --ContentWidth: 80%;
+}
+/* General */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.absolute{
+    position: absolute;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+header{
+    top: 0;
+}
+
+header nav{
+    margin: var(--NavMargin);
+}
+
+#HamMenu{
+    min-width: 50px;
+}
+header nav a {
+color: var(--LinkColor);
+text-decoration: none;
+}
+.icon{
+  padding: var(--NavIconPadding);
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+}
+
+footer .SocialLinks, footer .content{
+    margin: var(--FooterMargins);
+}
+
+footer .SocialLinks{
+    width: var(--SocialLinksWidth);
+}
+
+footer .content{
+    width: var(--ContentWidth);
+}

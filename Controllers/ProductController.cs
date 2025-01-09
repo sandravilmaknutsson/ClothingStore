@@ -1,4 +1,5 @@
 using ClothingStore.Model;
+using ClothingStore.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClothingStore.Controllers
@@ -16,8 +17,8 @@ namespace ClothingStore.Controllers
 
         public IActionResult List()
         {
-            ViewBag.CurrentCategory = "Pants";
-            return View(_productRepository.AllProducts);
+            ProductListViewModel productListViewModel = new ProductListViewModel(_productRepository.AllProducts, "Pants");
+            return View(productListViewModel);
         }
     }
 }

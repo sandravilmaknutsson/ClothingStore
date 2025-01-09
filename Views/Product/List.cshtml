@@ -1,17 +1,7 @@
-@model IEnumerable<ClothingStore.Model.Product>
+@model IEnumerable<ClothingStore.ViewModels.ProductListViewModel>
 
-<!DOCTYPE html>
-<html lang="en">
+@{
+    Layout = "_Layout";
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dressi</title>
-</head>
-
-<body>
-    <h1>@ViewBag.CurrentCategory</h1>
-
-</body>
-
-</html>
+<h1>@ViewBag.CurrentCategory</h1>

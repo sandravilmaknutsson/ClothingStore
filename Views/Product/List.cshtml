@@ -1,7 +1,3 @@
-@model IEnumerable<ClothingStore.ViewModels.ProductListViewModel>
+@model ProductListViewModel
 
-@{
-    Layout = "_Layout";
-}
-
-<h1>@ViewBag.CurrentCategory</h1>
+<h1>@Model.CurrentCategory</h1>

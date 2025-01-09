@@ -16,6 +16,7 @@ namespace ClothingStore.Controllers
 
         public IActionResult List()
         {
+            ViewBag.CurrentCategory = "Pants";
             return View(_productRepository.AllProducts);
         }
     }
